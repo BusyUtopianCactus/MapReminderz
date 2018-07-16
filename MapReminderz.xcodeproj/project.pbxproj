@@ -54,7 +54,6 @@
 		45E7919C20FD4B82000BDECD /* MapReminderz */ = {
 			isa = PBXGroup;
 			children = (
-				45E791B120FD5510000BDECD /* Models */,
 				45E791B020FD547E000BDECD /* Controllers */,
 				45E7919D20FD4B82000BDECD /* AppDelegate.swift */,
 				45E791A120FD4B82000BDECD /* Main.storyboard */,
@@ -71,13 +70,6 @@
 				45E7919F20FD4B82000BDECD /* InitialViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		45E791B120FD5510000BDECD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
