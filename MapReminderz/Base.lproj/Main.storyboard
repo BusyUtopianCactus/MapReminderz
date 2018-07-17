@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,21 +70,35 @@
             </objects>
             <point key="canvasLocation" x="1902" y="136"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Check List Table View Controller-->
         <scene sceneID="j89-r3-RkX">
             <objects>
-                <tableViewController id="HWe-Wa-Dsz" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MAe-YK-kGw">
+                <tableViewController id="HWe-Wa-Dsz" customClass="CheckListTableViewController" customModule="MapReminderz" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MAe-YK-kGw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mlp-HA-aoS">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mlp-HA-aoS" customClass="CheckListTableViewCell" customModule="MapReminderz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mlp-HA-aoS" id="ibb-Vd-2Pi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checklist Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-7P-8Fq">
+                                            <rect key="frame" x="26" y="11" width="318" height="98"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iCN-7P-8Fq" secondAttribute="trailing" constant="15" id="IwO-O5-h8T"/>
+                                        <constraint firstItem="iCN-7P-8Fq" firstAttribute="top" secondItem="ibb-Vd-2Pi" secondAttribute="topMargin" id="XaX-IH-DYJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iCN-7P-8Fq" secondAttribute="bottom" id="gwx-xx-yV2"/>
+                                        <constraint firstItem="iCN-7P-8Fq" firstAttribute="leading" secondItem="ibb-Vd-2Pi" secondAttribute="leadingMargin" constant="10" id="lIM-VZ-tHt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -92,6 +107,9 @@
                             <outlet property="delegate" destination="HWe-Wa-Dsz" id="LVu-se-IbP"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="checklistTitleLabel" destination="iCN-7P-8Fq" id="fNV-al-eEj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCR-C4-Hb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
