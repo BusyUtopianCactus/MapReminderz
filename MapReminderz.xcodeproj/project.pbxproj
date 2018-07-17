@@ -14,6 +14,7 @@
 		45E791A320FD4B82000BDECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E791A120FD4B82000BDECD /* Main.storyboard */; };
 		45E791A520FD4B86000BDECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E791A420FD4B86000BDECD /* Assets.xcassets */; };
 		45E791A820FD4B86000BDECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E791A620FD4B86000BDECD /* LaunchScreen.storyboard */; };
+		C9E61FA120FE5D5F0009993F /* CheckListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E61FA020FE5D5F0009993F /* CheckListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		45E791A420FD4B86000BDECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E791A720FD4B86000BDECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E791A920FD4B87000BDECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E61FA020FE5D5F0009993F /* CheckListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				45E7919F20FD4B82000BDECD /* InitialViewController.swift */,
+<<<<<<< HEAD
 				0F85FD1020FE4E1A001A0DD0 /* CheckListTableViewController.swift */,
+=======
+				C9E61FA020FE5D5F0009993F /* CheckListTableViewController.swift */,
+>>>>>>> f1072d7ed19f18f01ec1b256072296fa0f7f862f
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,7 +163,11 @@
 				0F85FD1320FE56B8001A0DD0 /* CheckListTableViewCell.swift in Sources */,
 				45E791A020FD4B82000BDECD /* InitialViewController.swift in Sources */,
 				45E7919E20FD4B82000BDECD /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				0F85FD1120FE4E1A001A0DD0 /* CheckListTableViewController.swift in Sources */,
+=======
+				C9E61FA120FE5D5F0009993F /* CheckListTableViewController.swift in Sources */,
+>>>>>>> f1072d7ed19f18f01ec1b256072296fa0f7f862f
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
