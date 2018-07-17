@@ -65,9 +65,9 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zm3-CH-Cer">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem id="xrj-M4-4Pa" userLabel="Bar ">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xy5-ue-nuU"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="T4j-YV-wDa"/>
+                                    <navigationItem id="ShT-Qz-d5E">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AUv-2m-HDI"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="h8P-E5-xeQ"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
