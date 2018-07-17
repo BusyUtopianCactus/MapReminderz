@@ -11,8 +11,7 @@ import UIKit
 
 class CheckListTableViewController: UITableViewController {
     
-    @IBOutlet weak var checklistTitleLabel: UILabel!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,10 +22,9 @@ class CheckListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 2
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "checkListTableViewCell", for: indexPath) as! CheckListTableViewCell
+        cell.titleLabel.text = "Location:"
+    
         return cell
     }
     

@@ -11,4 +11,7 @@ import UIKit
 
 class CheckListTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleTextField: UITextField!
 }
+

@@ -79,41 +79,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mlp-HA-aoS" customClass="CheckListTableViewCell" customModule="MapReminderz" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkListTableViewCell" id="mlp-HA-aoS" customClass="CheckListTableViewCell" customModule="MapReminderz" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mlp-HA-aoS" id="ibb-Vd-2Pi">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checklist Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-7P-8Fq">
-                                            <rect key="frame" x="26" y="11" width="318" height="98"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67X-8Z-3oI">
+                                            <rect key="frame" x="21" y="11" width="323" height="98"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z6k-ad-mxt">
+                                            <rect key="frame" x="99" y="45" width="200" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="iCN-7P-8Fq" secondAttribute="trailing" constant="15" id="IwO-O5-h8T"/>
-                                        <constraint firstItem="iCN-7P-8Fq" firstAttribute="top" secondItem="ibb-Vd-2Pi" secondAttribute="topMargin" id="XaX-IH-DYJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="iCN-7P-8Fq" secondAttribute="bottom" id="gwx-xx-yV2"/>
-                                        <constraint firstItem="iCN-7P-8Fq" firstAttribute="leading" secondItem="ibb-Vd-2Pi" secondAttribute="leadingMargin" constant="10" id="lIM-VZ-tHt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="67X-8Z-3oI" secondAttribute="bottom" id="By4-Df-v5v"/>
+                                        <constraint firstItem="67X-8Z-3oI" firstAttribute="leading" secondItem="ibb-Vd-2Pi" secondAttribute="leadingMargin" constant="5" id="K8Z-7t-Xl1"/>
+                                        <constraint firstItem="67X-8Z-3oI" firstAttribute="top" secondItem="ibb-Vd-2Pi" secondAttribute="topMargin" id="KF9-Wl-haE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="67X-8Z-3oI" secondAttribute="trailing" constant="15" id="ab0-av-RUM"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="67X-8Z-3oI" id="7AJ-z1-3Nf"/>
+                                    <outlet property="titleTextField" destination="Z6k-ad-mxt" id="k3C-TJ-wtP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="HWe-Wa-Dsz" id="WcH-IV-D4R"/>
                             <outlet property="delegate" destination="HWe-Wa-Dsz" id="LVu-se-IbP"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="checklistTitleLabel" destination="iCN-7P-8Fq" id="fNV-al-eEj"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCR-C4-Hb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664" y="135"/>
+            <point key="canvasLocation" x="2663.1999999999998" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3ze-4b-4xY">
