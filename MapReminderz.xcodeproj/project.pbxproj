@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F85FD1120FE4E1A001A0DD0 /* CheckListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F85FD1020FE4E1A001A0DD0 /* CheckListTableViewController.swift */; };
+		0F85FD1320FE56B8001A0DD0 /* CheckListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F85FD1220FE56B8001A0DD0 /* CheckListTableViewCell.swift */; };
 		45E7919E20FD4B82000BDECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7919D20FD4B82000BDECD /* AppDelegate.swift */; };
 		45E791A020FD4B82000BDECD /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7919F20FD4B82000BDECD /* InitialViewController.swift */; };
 		45E791A320FD4B82000BDECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E791A120FD4B82000BDECD /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F85FD1020FE4E1A001A0DD0 /* CheckListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewController.swift; sourceTree = "<group>"; };
+		0F85FD1220FE56B8001A0DD0 /* CheckListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewCell.swift; sourceTree = "<group>"; };
 		45E7919A20FD4B82000BDECD /* MapReminderz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapReminderz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E7919D20FD4B82000BDECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E7919F20FD4B82000BDECD /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				45E791A620FD4B86000BDECD /* LaunchScreen.storyboard */,
 				45E791A920FD4B87000BDECD /* Info.plist */,
 				C91B0EA820FEAB4A008D13E9 /* MapReminderz.xcdatamodeld */,
+				0F85FD1220FE56B8001A0DD0 /* CheckListTableViewCell.swift */,
 			);
 			path = MapReminderz;
 			sourceTree = "<group>";
@@ -73,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				45E7919F20FD4B82000BDECD /* InitialViewController.swift */,
+				0F85FD1020FE4E1A001A0DD0 /* CheckListTableViewController.swift */,
 				C9E61FA020FE5D5F0009993F /* CheckListTableViewController.swift */,
 			);
 			path = Controllers;
@@ -110,6 +116,11 @@
 				TargetAttributes = {
 					45E7919920FD4B82000BDECD = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -149,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F85FD1320FE56B8001A0DD0 /* CheckListTableViewCell.swift in Sources */,
 				45E791A020FD4B82000BDECD /* InitialViewController.swift in Sources */,
 				45E7919E20FD4B82000BDECD /* AppDelegate.swift in Sources */,
+				0F85FD1120FE4E1A001A0DD0 /* CheckListTableViewController.swift in Sources */,
 				C9E61FA120FE5D5F0009993F /* CheckListTableViewController.swift in Sources */,
 				C91B0EAA20FEAB4A008D13E9 /* MapReminderz.xcdatamodeld in Sources */,
 			);
